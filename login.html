@@ -1,0 +1,64 @@
+<style>
+body{
+   background-color: rgb(0, 0, 0); 
+}
+    
+
+div{
+        background-color: rgb(72, 137, 233);
+        box-shadow: 20px 30px 20px;
+        margin-top: 100px;
+        border: none;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 530px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: medium;
+    }
+    input{
+    height: 40px; 
+    width: 300px; 
+    border-radius: 10px; 
+    text-align: center; 
+    border: none; 
+    }
+    button{
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(80, 201, 80);
+    }
+    button:hover{
+        background-color: rgb(3, 97, 3);
+        color: whitesmoke;
+        border: 1px  solid rgb(1, 47, 1);
+        border-radius: 10px;
+    }
+</style>
+<div>
+<form id="loginForm" style="display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+<h1><b> LogIn </b></h1>
+<input
+type="email"
+id="email"
+placeholder="Email*" required>
+
+<input
+type="password"
+id="password" 
+placeholder="Password*" required>
+
+<a href="#" style="margin-right: 130px; font-size: smaller;color: white;">Forget Password?</a>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+</div>
+<script src="loginpage.js"></script>

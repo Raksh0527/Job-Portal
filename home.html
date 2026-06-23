@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Portal</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+header{
+
+background:#2563eb;
+color:white;
+padding:18px 50px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+
+}
+
+.hero{
+
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+color:white;
+padding:70px 20px;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:18px;
+margin-bottom:30px;
+
+}
+
+.search-box{
+
+display:flex;
+justify-content:center;
+gap:10px;
+
+}
+
+.search-box input{
+
+width:450px;
+padding:14px;
+border:none;
+border-radius:6px;
+
+}
+
+.search-box button{
+
+padding:14px 25px;
+border:none;
+background:#16a34a;
+color:white;
+border-radius:6px;
+cursor:pointer;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:40px auto;
+
+}
+#search-res{
+    display: none;
+}
+
+.section-title{
+
+margin-bottom:25px;
+color:#333;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+
+}
+
+.card h3{
+
+margin-bottom:10px;
+color:#2563eb;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+color:#666;
+
+}
+
+.card button{
+
+padding:10px 20px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+footer{
+margin-top:45px;
+background:#1e293b;
+color:white;
+padding:25px;
+text-align:center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Job Portal
+
+</div>
+
+<nav>
+
+<a href="home.html">Home</a>
+
+<a href="jobs.html">Jobs</a>
+
+<a href="createJob.html">Post Job</a>
+
+<a href="profile.html">Profile</a>
+
+<a id="logout">Logout</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Find Your Dream Job</h1>
+
+<p>Thousands of jobs from top companies are waiting for you.</p>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search by Role or company" id="search-box">
+
+<button type="click" id="search-btn">
+
+Search
+
+</button>
+
+</div>
+
+</section>
+
+<div class="container">
+<span id="search-res">
+<h2>Search Results</h2><br>
+
+<div id="search-results"></div></span>
+
+<br><br>
+  
+
+<h2 class="section-title">
+
+Quick Actions
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📋 View Jobs</h3>
+
+<p>
+
+Browse all available jobs.
+
+</p>
+
+<button onclick="location.href='jobs.html'">
+
+Explore
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>➕ Post Job</h3>
+
+<p>
+
+Create a new job posting.
+
+</p>
+
+<button onclick="location.href='createJob.html'">
+
+Post Job
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>📝 My Applications</h3>
+
+<p>
+
+Track your applied jobs.
+
+</p>
+
+<button>
+
+View
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>👤 Profile</h3>
+
+<p>
+
+Manage your profile.
+
+</p>
+
+<button>
+
+Profile
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+<br>
+<br><br>
+<footer>
+<p>
+© 2026 Job Portal | Built using HTML, CSS, JavaScript, Node.js, Express & MongoDB
+</p>
+
+</footer>
+
+<script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:18px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h2{
+    font-size:26px;
+}
+
+header nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+}
+
+.profile-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.profile-header{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    font-weight:bold;
+}
+
+.profile-info h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.profile-info p{
+    color:#666;
+    margin:5px 0;
+}
+
+.details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.box{
+    background:#f8f9fc;
+    padding:18px;
+    border-radius:10px;
+}
+
+.box h4{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.box p{
+    color:#555;
+}
+
+.btn-group{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.edit{
+    background:#2563eb;
+    color:white;
+}
+
+.password{
+    background:#16a34a;
+    color:white;
+}
+
+.logout{
+    background:#ef4444;
+    color:white;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h2>Job Portal</h2>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="createJob.html">Post Job</a>
+<a href="profile.html">Profile</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="profile-card">
+
+<div class="profile-header">
+
+<div class="profile-img">
+P
+</div>
+
+<div class="profile-info">
+
+<h2>Param</h2>
+
+<p>📧 example@gmail.com</p>
+
+<p>📱 +91 987654xxxx</p>
+
+<p>📍 Bangalore, India</p>
+
+</div>
+
+</div>
+
+<div class="details">
+
+<div class="box">
+<h4>Role</h4>
+<p>MERN Stack Developer</p>
+</div>
+
+<div class="box">
+<h4>Experience</h4>
+<p>1 Year (IT Administrator)</p>
+</div>
+
+<div class="box">
+<h4>Skills</h4>
+<p>HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</p>
+</div>
+
+<div class="box">
+<h4>Projects</h4>
+<p>Portfolio, IMDB Movie Rating, Job Portal</p>
+</div>
+
+</div>
+
+<div class="btn-group">
+
+<button class="edit">
+Edit Profile
+</button>
+
+<button class="password">
+Change Password
+</button>
+
+<button class="logout" id="logout">
+Logout
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("logout").addEventListener("click", (e)=>{
+
+    e.preventDefault();
+    alert("Succesfully Logged-Out");
+    window.location.replace("login.html");
+})
+</script>
+
+</body>
+</html>
